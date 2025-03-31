@@ -3,40 +3,97 @@
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styles/index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	<title>Meu portfólio</title>
 </head>
-
 <body>
-	<h1>Diego Perpétuo Andrade de Oliveira</h1>
-	<img
-  	src="me.jpg"
-  	alt="Foto de Diego Perpétuo" />
 
-	<h2>Formações</h2>
-	<h3>Formação Acadêmica</h3>
+	<header class="header">
+		<h1>Diego Perpétuo Andrade de Oliveira</h1>
+	</header>
+    <section class="about-me">
+        <div class="container">
+            <div class="profile">
+                <img class="photo" src="../assets/images/me.jpg" alt="Foto de Diego Perpétuo">
+            </div>
+            <div class="bio">
+                <p>Sou técnico em Desenvolvimento de Sistemas e estudante de Engenharia da Computação no SENAI CIMATEC. Possuo experiência em automação industrial, com tarefas voltadas ao monitoramento e sensoriamento de processos com tratamento de dados. Atualmente trabalho em projetos com ênfase na aplicação de Visão Computacional na robótica submarina. 20 anos, natural de Salvador, BA. Cristão, torcedor do Esporte Clube Bahia e amante de livros e cinema.</p>
+            </div>
+        </div>
+    </section>
 
-	<ul>
-		<li>Engenharia de Computação (2022 - em andamento): SENAI CIMATEC</li>
-		<li>Técnico em Desenvolvimento de Sistemas (2021 - 2022): SENAI CIMATEC</li>
-	</ul>
 	
-	<hr/>
-	<h2>Experiência profissional</h2>
+	<section class="section">
+		<h2>Formações</h2>
+		<h3>Formação Acadêmica</h3>	
+		<ul>
+			<li>Engenharia de Computação (2022 - em andamento): SENAI CIMATEC</li>
+			<li>Técnico em Desenvolvimento de Sistemas (2021 - 2022): SENAI CIMATEC</li>
+		</ul>
+	</section>	
+	
+	<section class="section">
+		<h2>Experiência profissional</h2>
+		
+		<h4>Estágio em Automação Industrial</h4>
+		<p>Realizei atividades voltadas a monitoramento de processos industriais, utilizando ferramentas de sensoriamento IoT, banco de dados e dashboards para acompanhamento em tempo real</p>
+		
+		<h4>Iniciação Científica em IA</h4>
+		<p>Pesquisa científica em torno de ferramentas de Inteligência Artificial inseridas no ciclo de desenvolvimento de software, analisando métricas de desempenho e metodologias de projeto</p>
+		
+		<h4>Iniciação Tecnológica em Visão Computacional</h4>
+		<p>Pesquisa em projeto de detecção de vazamento de fluidos utilizando ferramentas de IA para Visão Computacional e Detecção de Objetos</p>
+	</section>
 
-	<h4>Estágio em Automação Industrial</h4>
-	<p>Realizei atividades voltadas a monitoramento de processos industriais, utilizando ferramentas de sensoriamento IoT, banco de dados e dashboards para acompanhamento em tempo real</p>
+	<section class="section">
+		<h2>Projetos</h2>
+		<div class="projects">
+			<a href="https://github.com/diegoperpetuo/ticket-generator" target="_blank" class="project-card">
+				<img src="../assets/images/tickets.png" alt="Projeto de tickets">
+				<h3>Ticket Generator</h3>
+				<p>Sistema de geração de tickets</p>
+			</a>
+			<a href="https://github.com/diegoperpetuo/age-calculator" target="_blank" class="project-card">
+				<img src="../assets/images/calculator.png" alt="Projeto de calculadora de idade">
+				<h3>Age Calculator</h3>
+				<p>Calculadora de idade</p>
+			</a>
+			<a href="https://github.com/diegoperpetuo/perpetual-web" target="_blank" class="project-card">
+				<img src="../assets/images/react-logo.svg" alt="Projeto de site de filmes">
+				<h3>Perpetual Web</h3>
+				<p>Site de filmes em React</p>
+			</a>
+		</div>
+	</section>
 
-	<h4>Iniciação Científica em IA</h4>
-	<p>Pesquisa científica em torno de ferramentas de Inteligência Artificial inseridas no ciclo de desenvolvimento de software, analisando métricas de desempenho e metodologias de projeto</p>
+	<section class="section">
+		<h2>Habilidades</h2>	
+		<ul>
+			<li>Inteligência Artificial</li>
+			<li>Ciência de Dados</li>
+			<li>Desenvolvimento de Software</li>
+			<li>Inglês técnico</li>
+		</ul>
+	</section>
+	
+		<footer class="footer">
+			<div class="container">
+				<p>&copy; <span id="year"></span> Diego Perpétuo. Todos os direitos reservados.</p>
+			</div>
+			<div class="social-links">
+				<a href="https://www.linkedin.com/in/diegoperpetuo/" target="_blank" aria-label="LinkedIn">
+					<i class="fab fa-linkedin"></i>
+				</a>
+				<a href="https://github.com/diegoperpetuo" target="_blank" aria-label="GitHub">
+					<i class="fab fa-github"></i>
+				</a>
+			</div>
+		</footer>
 
-	<h4>Iniciação Tecnológica em Visão Computacional</h4>
-	<p>Pesquisa em projeto de detecção de vazamento de fluidos utilizando ferramentas de IA para Visão Computacional e Detecção de Objetos</p>
-
-	<hr/>
-
-	<a href="about-me.html">Sobre mim</a>
-
+		<script>
+			document.getElementById('year').textContent = new Date().getFullYear();
+		</script>
 </body>
 
 </html>
